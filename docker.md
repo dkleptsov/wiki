@@ -17,3 +17,13 @@ docker rm $(docker ps -a -q)
   ```bash
 docker image prune -a
   ```
+3. **Clean unused volumes**
+  ```bash
+docker volume prune -f
+  ```
+4. **Clean unused networks and cahes**
+  ```bash
+docker system prune -a
+  ```
+
+docker system prune -a
